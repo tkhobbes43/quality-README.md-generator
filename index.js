@@ -1,8 +1,10 @@
 // TODO: Include packages needed for this application
+// fs needed to write and append files
 const fs = require('fs');
 
-
+// inquirer needed to prompt user using command line for inputs to create the README.md
 const inquirer = require('inquirer');
+
 // TODO: Create an array of questions for user input
 const questions = [
 
