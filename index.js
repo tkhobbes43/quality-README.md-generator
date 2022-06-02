@@ -33,7 +33,17 @@ const questions = [
         name: 'usage',
     },
     {
-        
+        type: 'input',
+        message: "If applicable, provide guidelines on how other developers can contribute to your project.",
+        name: 'contributing',
+    },
+    {
+        type: 'input',
+        message: "If applicable, provide any tests written for your application and provide examples on how to run them.",
+        name: 'tests',
+    },
+    {
+        type: 
     }
 ];
 
