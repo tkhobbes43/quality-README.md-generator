@@ -30,7 +30,7 @@ inquirer
             },
             {
                 type: 'input',
-                mesage: "Provide instructions and examples of your project in use for the Usage section.",
+                message: "Provide instructions and examples of your project in use for the Usage section.",
                 name: 'usage',
             },
             {
