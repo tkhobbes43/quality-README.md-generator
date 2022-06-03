@@ -3,6 +3,7 @@
 const fs = require('fs');
 // inquirer needed to prompt user using command line for inputs to create the README.md
 const inquirer = require('inquirer');
+const generateMarkdown = require("./utils/generateMarkdown")
 
 // TODO: Create an array of questions for user input
 inquirer
@@ -51,19 +52,21 @@ inquirer
             }
         // ];
     ])
+    // TODO: Create a function to write README file
     .then((answers) => {
-        fs.writeFile('README.md', gengerateREADME(answers))
+        fs.writeFile('README.md', generateMarkdown(answers), err => {
+            if(err) throw err;
+        })
     })
     .then(() => console.log('Succesfully wrote to README.md'))
     .catch((error) => {
         if (error.isTtyError) {
             console.log("Prompt couldn't be rendered in the current environment.")
         } else {
-            console.log("Something Else went wrong.")
+            console.log("Something Else went wrong.", error)
         }
     });
 
-// // TODO: Create a function to write README file
 // function writeToFile(fileName, data) {
 //     fs.writeFile(fileName, data, err => {
 //         if (err) {
