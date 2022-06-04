@@ -57,7 +57,7 @@ ${userResponse.usage}
 ${userResponse.contributing}
 
 ## Tests
-${user.Response.tests}
+${userResponse.tests}
 
 ## Questions
 For any questions or concerns, you can find me on my GitHub: [${userResponse.username}](https://github.com/${userResponse.username})
@@ -66,7 +66,7 @@ or email me with any questions: ${userResponse.email}
 `;
 
   return draftMarkdown
-  
+
 }
 
 module.exports = generateMarkdown;

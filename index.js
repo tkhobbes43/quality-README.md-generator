@@ -48,11 +48,6 @@ inquirer
             },
             {
                 type: 'input',
-                message: "What do I do if I have questionsPlease enter your Github username.",
-                name: 'username'
-            },
-            {
-                type: 'input',
                 message: "Please enter your Github username so that developers can reach you through your Github and can find it under the Questions section of your README.md.",
                 name: 'username'
             },
