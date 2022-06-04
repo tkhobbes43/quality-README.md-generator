@@ -28,7 +28,6 @@ function renderLicenseSection(license) {
 // function to generate markdown for README
 function generateMarkdown(userResponse) {
 const licenseUsed = renderLicenseSection(userResponse.license)
-  
 let draftMarkdown = 
 `<h1 align="center"> ${userResponse.title} </h1>
 
@@ -38,7 +37,7 @@ ${licenseUsed}
 
 ${userResponse.description}
 
-## Table of ContentsTable of Contents
+## Table of Contents
 - [Description](#description)
 - [Installation](#installation)
 - [Usage](#usage)
@@ -66,7 +65,6 @@ or my email: ${userResponse.email}
 `;
 
   return draftMarkdown
-
 }
 
 module.exports = generateMarkdown;

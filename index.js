@@ -52,7 +52,7 @@ inquirer
             },
             {
                 type: 'input',
-                message: "Please enter your email so that developers can reach you if they have more questions regarging your repos can find it under the Questions section of your README.md.",
+                message: "Please enter your email so that developers can reach you if they have more questions regarding your work.  They can then find it under the Questions section of your README.md.",
                 name: 'email'
             },
     ])
