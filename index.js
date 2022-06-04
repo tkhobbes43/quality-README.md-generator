@@ -3,16 +3,17 @@
 const fs = require('fs');
 // inquirer needed to prompt user using command line for inputs to create the README.md
 const inquirer = require('inquirer');
+// require modulse for generateMarkdown.js
 const generateMarkdown = require("./utils/generateMarkdown")
 
-// TODO: Create an array of questions for user input
+// inquirer prompt of questions for user to input to generate README.md
 inquirer
     .prompt([
         // const questions = [
             {
                 type: 'input',
                 message: "What is your Github username?",
-                name: 'username',
+                name: 'username'
             },
             {
                 type: 'input',
@@ -22,37 +23,37 @@ inquirer
             {
                 type: 'input',
                 message: "Write a description of  your project.",
-                name: 'description',
+                name: 'description'
             },
             {
                 type: 'input',
                 message: "Describe the steps required to install your project for the Installation section.",
-                name: 'installation',
+                name: 'installation'
             },
             {
                 type: 'input',
                 message: "Provide instructions and examples of your project in use for the Usage section.",
-                name: 'usage',
+                name: 'usage'
             },
             {
                 type: 'input',
                 message: "If applicable, provide guidelines on how other developers can contribute to your project.",
-                name: 'contributing',
+                name: 'contributing'
             },
             {
                 type: 'input',
                 message: "If applicable, provide any tests written for your application and provide examples on how to run them.",
-                name: 'tests',
+                name: 'tests'
             },
             {
                 type: 'list',
                 message: "Choose a license for your project.",
-                choices: ['GNU AGPLv3', 'GNU GPLv3', 'GNU LGPLv3', 'Mozilla Public License 2.0', 'Apache License 2.0', 'MIT License', 'Boot Software License 1.0', 'The Unlicense'],
-                name: 'license',
+                choices: ['GNU AGPLv3', 'GNU GPLv3', 'GNU LGPLv3', 'Mozilla Public License 2.0', 'Apache License 2.0', 'MIT License', 'Boost Software License 1.0', 'The Unlicense', 'N/A'],
+                name: 'license'
             }
         // ];
     ])
-    // TODO: Create a function to write README file
+    // FS function to write README file or go provide error
     .then((answers) => {
         fs.writeFile('README.md', generateMarkdown(answers), err => {
             if(err) throw err;

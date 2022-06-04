@@ -2,7 +2,7 @@
 // returns license badge based on which license is passed in
 // as well as returns the license link
 // If there is no license, return an empty string
-// 
+
 function renderLicenseSection(license) {
   if(license === 'MIT License') {
     return "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)"
@@ -18,12 +18,14 @@ function renderLicenseSection(license) {
     return "[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)"
   } else if (license === 'Boost Software License 1.0') {
     return "[![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)"
-  } else (license === 'The Unlicense') {
+  } else if (license === 'The Unlicense') {
     return "[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)"
-  }
+  } else { 
+    return "";
+  } 
 }
 
-// TODO: Create a function to generate markdown for README
+// function to generate markdown for README
 function generateMarkdown(userResponse) {
   const licenseUsed = renderLicenseSection(userResponse.license)
 
