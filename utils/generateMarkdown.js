@@ -60,8 +60,8 @@ ${userResponse.contributing}
 ${userResponse.tests}
 
 ## Questions
-For any questions or concerns, you can find me on my GitHub: [${userResponse.username}](https://github.com/${userResponse.username})
-or email me with any questions: ${userResponse.email}
+For any questions or concerns, contact me at either my [GitHub](https://github.com/${userResponse.username})
+or my email: ${userResponse.email}
 
 `;
 
