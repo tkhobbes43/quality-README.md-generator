@@ -42,6 +42,6 @@ You need to run "node index.js" at the root of your project and then answer the 
 For any questions or concerns, contact me at either my [GitHub](https://github.com/tkhobbes43)
 or my email: t.k.hobbes43@gmail.com
 
-[Link to deployed application]
+[Link to deployed application](https://tkhobbes43.github.io/quality-README.md-generator/)
 
-![Screenshot of website]
+![Screenshot of website](/assets/images/deployed-app-screenshot.png)
