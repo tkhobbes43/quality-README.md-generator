@@ -1,4 +1,4 @@
-// TODO: Include packages needed for this application
+// This is where I put all the packages needed for this application
 // fs needed to write and append files
 const fs = require('fs');
 // inquirer needed to prompt user using command line for inputs to create the README.md
@@ -10,11 +10,6 @@ const generateMarkdown = require("./utils/generateMarkdown")
 inquirer
     .prompt([
         // const questions = [
-            {
-                type: 'input',
-                message: "What is your Github username?",
-                name: 'username'
-            },
             {
                 type: 'input',
                 message: "What is the title of your project?",
@@ -50,8 +45,22 @@ inquirer
                 message: "Choose a license for your project.",
                 choices: ['GNU AGPLv3', 'GNU GPLv3', 'GNU LGPLv3', 'Mozilla Public License 2.0', 'Apache License 2.0', 'MIT License', 'Boost Software License 1.0', 'The Unlicense', 'N/A'],
                 name: 'license'
-            }
-        // ];
+            },
+            {
+                type: 'input',
+                message: "What do I do if I have questionsPlease enter your Github username.",
+                name: 'username'
+            },
+            {
+                type: 'input',
+                message: "Please enter your Github username so that developers can reach you through your Github and can find it under the Questions section of your README.md.",
+                name: 'username'
+            },
+            {
+                type: 'input',
+                message: "Please enter your email so that developers can reach you if they have more questions regarging your repos can find it under the Questions section of your README.md.",
+                name: 'email'
+            },
     ])
     // FS function to write README file or go provide error
     .then((answers) => {
