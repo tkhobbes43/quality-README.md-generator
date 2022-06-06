@@ -40,6 +40,4 @@ You need to run "node index.js" at the root of your project and then answer the 
 For any questions or concerns, contact me at either my [GitHub](https://github.com/tkhobbes43)
 or my email: t.k.hobbes43@gmail.com
 
-![Walkthrough Video](https://tkhobbes43.github.io/quality-README.md-generator/)
-
-![Gif of application in action](/assets/images/deployed-app-screenshot.png)
+[Walkthrough Video](https://drive.google.com/file/d/1YI-AFCYz7U4aRsSRHJAqDS0Q982B1Aj5/view?usp=sharing)
