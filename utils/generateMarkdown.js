@@ -35,7 +35,7 @@ ${licenseUsed}
 
 ## Description
 
-${userResponse.description}
+${renderLicenseSection(userResponse.license)}
 
 ## Table of Contents
 - [Description](#description)

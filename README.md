@@ -6,7 +6,7 @@ I want to create a command-line application that will dynamically generate a pro
 
 ## Table of Contents
 - [Description](#description)
-- [Acceptance Criteria](#acceptance_criteria)
+- [Acceptance Criteria](#acceptance-criteria)
 - [Usage](#usage)
 - [Installation](#installation)
 - [Questions](#questions)
