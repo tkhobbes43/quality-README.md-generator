@@ -27,15 +27,14 @@ function renderLicenseSection(license) {
 
 // function to generate markdown for README
 function generateMarkdown(userResponse) {
-const licenseUsed = renderLicenseSection(userResponse.license)
 let draftMarkdown = 
 `<h1 align="center"> ${userResponse.title} </h1>
 
-${licenseUsed}
+${renderLicenseSection(userResponse.license)}
 
 ## Description
 
-${renderLicenseSection(userResponse.license)}
+${userResponse.description}
 
 ## Table of Contents
 - [Description](#description)
